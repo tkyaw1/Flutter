@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   devise_for :installs
   #Define routes for Pages
   root 'pages#index'
-  #get 'pages/index'
+
   get '/home' => 'pages#home'
 
   get '/user/:id' => 'pages#profile'
