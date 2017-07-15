@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  devise_for :users
+  devise_for :installs
   #Define routes for Pages
   root 'pages#index'
   #get 'pages/index'
